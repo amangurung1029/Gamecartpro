@@ -23,10 +23,11 @@ s0.parentNode.insertBefore(s1,s0);
         <input type="text" name="searchkeyword" class="form-control pull-left" placeholder="Search for..." style="margin:0px 5px;width: 80%">
         <input type="submit" value="Search" class="btn btn-default">
     </div>
-     <div class="col-lg" {{# if undefined}}hidden{{/if}}>
+     <div class="col-lg" style="margin-bottom:10px" {{# if undefined}}hidden{{/if}}>
          {{# if noMatch}} <h2 style="text-align:center;margin-bottom:450px"> {{ noMatch }} </h2> {{/if}}
      </div>
 </form>
+
 
 
 <div class="row">
@@ -36,9 +37,9 @@ s0.parentNode.insertBefore(s1,s0);
         </div>
     </div>
 </div>
-
+<div style="margin-bottom:150px">
 {{# each products}}
-<div class="row"  style="font-family: 'Raleway', sans-serif;">
+<div class="row"  style="font-family: 'Raleway', sans-serif;" >
     {{# each this}}
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
@@ -56,3 +57,4 @@ s0.parentNode.insertBefore(s1,s0);
     {{/each}}
 </div>
 {{/each}}
+</div>
