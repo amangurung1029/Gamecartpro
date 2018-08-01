@@ -1,144 +1,181 @@
+<!-- Masthead -->
 
-    <!-- Masthead -->
-    <header class="masthead text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h1 class="mb-5">Game Cart</h1>
-            <h2 class="mb-5">Your one stop solution for all your games ! </h2>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-                <div class="col-12 col-md-offset  col-md-12">
-                  <a type="submit" class="btn btn-block btn-lg btn-primary" href="/user/signup">Sign Up</a>
-                  
-                </div>
+<header class="masthead text-white text-center">
+  <div class="overlay"></div>
+  <div class=" container">
+    <div class="row" style="font-family: 'Pacifico', cursive;">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5" style="font-family: 'Raleway', sans-serif;font-size:50px;opacity:0.9">Game Cart</h1>
+        <h2 class="mb-5" style="font-family: 'Raleway', sans-serif;opacity:0.9">Your one stop solution for all your games ! </h2>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            {{# if login}}
+            <div class="col-12 col-md-offset  col-md-12" style="font-family: 'Pacifico', cursive;">
+              <h2 style="font-family: 'Raleway', sans-serif;opacity:0.9">Check Your Cart here! </h2>
+              <br>
+              <div class="  col-md-10 col-md-offset-1">
+                <a type="submit" class="btn btn-block btn-lg btn-primary" href="/shopping-cart">Cart</a>
               </div>
-            </form>
+            </div>
+            {{ else }}
+              <div class="col-12 col-md-offset  col-md-12" style="font-family: 'Pacifico', cursive;">
+              <h2 style="font-family: 'Raleway', sans-serif;opacity:0.9">Start shopping </h2>
+              <br>
+              <div class="  col-md-10 col-md-offset-1">
+                <a type="submit" class="btn btn-block btn-lg btn-primary" href="/">Store</a>
+              </div>
+            </div>
+            {{/if}}
           </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Icons Grid -->
+<section class="features-icons bg-light text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-screen-desktop m-auto text-primary"></i>
+          </div>
+          <h3 style="font-family: 'Raleway', sans-serif;">Better user experience</h3>
+          <p class="lead mb-0"  style="font-family: 'Raleway', sans-serif;">This theme will look great on any device, no matter the size!</p>
         </div>
       </div>
-    </header>
-
-    <!-- Icons Grid -->
-    <section class="features-icons bg-light text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-screen-desktop m-auto text-primary"></i>
-              </div>
-              <h3>Better user experience</h3>
-              <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
-            </div>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-layers m-auto text-primary"></i>
           </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-layers m-auto text-primary"></i>
-              </div>
-              <h3>Better UI</h3>
-              <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-              <div class="features-icons-icon d-flex">
-                <i class="icon-check m-auto text-primary"></i>
-              </div>
-              <h3>Easy  &amp;Fast</h3>
-              <p class="lead mb-0">No matter if we are online or not you will still get your game account instantly.</p>
-            </div>
-          </div>
+          <h3 style="font-family: 'Raleway', sans-serif;">Better UI</h3>
+          <p class="lead mb-0" style="font-family: 'Raleway', sans-serif;">Featuring the latest build of the new Bootstrap 4 framework!</p>
         </div>
       </div>
-    </section>
-
-    <!-- imge Showcases -->
-    <section class="showcase">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters">
-
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>One stope for all your needs</h2>
-            <p class="lead mb-0"> Game cart has the best deals and discounts for you to buy games online. Get access to the latest collection of gaming consoles and accessories. You can now buy games online at the lowest rates. Your one stop destination gaming that lets you pre order games online. Lets get gaming !</p>
+      <div class="col-lg-4">
+        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-check m-auto text-primary"></i>
           </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
-          <div class="col-lg-6 my-auto showcase-text">
-            <h2>Better UI</h2>
-            <p class="lead mb-0">All new updated dynamic website for the best user experience.Build with the latest softwares for the premium feel for the user </p>
-          </div>
-        </div>
-        <div class="row no-gutters">
-          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
-          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-            <h2>Easy  &amp;Fast</h2>
-            <p class="lead mb-0">We are faster than the flick of kennyS when it comes to delivering accounts. All Accounts are delivered instantly after the payment has been processed. So no matter if we are online or not you will still get your game account instantly.</p>
-          </div>
+          <h3 style="font-family: 'Raleway', sans-serif;">Easy &amp;Fast</h3>
+          <p class="lead mb-0" style="font-family: 'Raleway', sans-serif;">No matter if we are online or not you will still get your game account instantly.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Testimonials -->
-    <section class="testimonials text-center bg-light">
-      <div class="container">
-        <h2 class="mb-5">We would like to introduce the team behind </h2>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
-              <h5>Anup</h5>
-              <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
-              <h5>Aman</h5>
-              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-              <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
-              <h5>Manoj</h5>
-              <p class="font-weight-light mb-0">"It's been a great experince working through this project"</p>
-            </div>
-          </div>
+<!-- imge Showcases -->
+<section class="showcase">
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2 style="font-family: 'Raleway', sans-serif;">One stope for all your needs</h2>
+        <p class="lead mb-0" style="font-family: 'Raleway', sans-serif;"> Game cart has the best deals and discounts for you to buy games online. Get access to the latest collection of gaming
+          consoles and accessories. You can now buy games online at the lowest rates. Your one stop destination gaming that
+          lets you pre order games online. Lets get gaming !</p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+      <div class="col-lg-6 my-auto showcase-text">
+        <h2 style="font-family: 'Raleway', sans-serif;">Better UI</h2>
+        <p class="lead mb-0" style="font-family: 'Raleway', sans-serif;">All new updated dynamic website for the best user experience.Build with the latest softwares for the premium feel
+          for the user </p>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+      <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+        <h2 style="font-family: 'Raleway', sans-serif;">Easy &amp;Fast</h2>
+        <p class="lead mb-0" style="font-family: 'Raleway', sans-serif;">We are faster than the flick of kennyS when it comes to delivering accounts. All Accounts are delivered instantly
+          after the payment has been processed. So no matter if we are online or not you will still get your game account
+          instantly.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials text-center bg-light">
+  <div class="container">
+    <h2 class="mb-5" style="font-family: 'Raleway', sans-serif;">We would like to introduce the team behind </h2>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+          <h5 style="font-family: 'Raleway', sans-serif;">Anup</h5>
+          <p class="font-weight-light mb-0" style="font-family: 'Raleway', sans-serif;">"This is fantastic! Thanks so much guys!"</p>
         </div>
       </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="call-to-action text-white text-center">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 mx-auto">
-            <h2 class="mb-4">Ready to get started? Start shopping!</h2>
-          </div>
-          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-            <form>
-              <div class="form-row">
-
-                
-                  <div class="col-12 col-md-12">
-                  <a href="/" class="btn btn-block btn-lg btn-primary">Shop</a>
-                </div>
-              </div>
-            </form>
-          </div>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+          <h5 style="font-family: 'Raleway', sans-serif;">Aman</h5>
+          <p class="font-weight-light mb-0" style="font-family: 'Raleway', sans-serif;">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
         </div>
       </div>
-    </section>
+      <div class="col-lg-4">
+        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+          <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+          <h5 style="font-family: 'Raleway', sans-serif;">Manoj</h5>
+          <p class="font-weight-light mb-0" style="font-family: 'Raleway', sans-serif;">"It's been a great experince working through this project"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--About Us-->
 
 
+<!-- Call to Action -->
+<section class="call-to-action text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      {{# if login}}
 
+      <div class="col-xl-9 mx-auto" style="font-family: 'Pacifico', cursive;">
+        <h2 class="mb-4" style="font-family: 'Pacifico', cursive;">Check your order history here!</h2>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-12" style="font-family: 'Pacifico', cursive;">
+              <a href="/user/profile" class="btn btn-block btn-lg btn-primary" style="font-family: 'Pacifico', cursive;">User Account</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      {{ else }}
 
- 
+      <div class="col-xl-9 mx-auto" style="font-family: 'Pacifico', cursive;">
+        <h2 class="mb-4" style="font-family: 'Raleway', sans-serif;opacity:0.9">Ready to get started? Sign up !</h2>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="  col-md-10 col-md-offset-1" style="font-family: 'Raleway', sans-serif;">
+              <a href="/user/signup" class="btn btn-block btn-lg btn-primary" style="font-family: 'Pacifico', cursive;">Sign Up</a>
+            </div>
+            <div class="col-12 col-md-12" style="margin:4px 0px" style="font-family: 'Pacifico', cursive;opacity:0.9">
+              <p class="mb-4">Existing user
+                <a href="/user/signin"> Sign in</a>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+      {{/if}}
+    </div>
+  </div>
+</section>

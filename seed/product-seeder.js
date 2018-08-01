@@ -5,42 +5,37 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/shopping',{ useNewUrlParser: true });
 var products = [
     new Product({
-        imagePath: 'https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_WWE2K18_image1600w.jpg',
-        title:'WWE 2k18',
-        description:'Best Wrestling GAME',
-        price:29
+        imagePath: 'https://media.contentapi.ea.com/content/dam/bf/videos/2018/05/772d085e-9d72-bd99-1dd4-2c6946bdb348.youtube/subassets/poster.jpg.adapt.crop16x9.1920w.jpg',
+        title:'Battlefield V',
+        description:'Battlefield V will focus extensively on party-based features and mechanics, scarcity of resources, and removing "abstractions" from game mechanics to increase realism.',
+        price:49
     }),
     new Product({
-        imagePath: 'https://images.g2a.com/newlayout/323x433/1x1x0/6a05d7a7d6e6/59a01f345bafe3badf2fe473',
-        title:'FIFA 18',
-        description:'EA sports',
-        price:35
+        imagePath: 'https://res.cloudinary.com/lmn/image/upload/c_limit,h_360,w_640/e_sharpen:100/f_auto,fl_lossy,q_auto/v1/gameskinnyc/j/u/s/just-cause-listing-thumb-ps4-19oct15-b9164.png',
+        title:'Just Cause 3',
+        description:'Just Cause 3 is an action-adventure video game developed by Avalanche Studios and published by Square Enix',
+        price:39
     }),
     new Product({
-        imagePath: 'https://www.technobezz.com/files/uploads/2018/05/Detroit-Become-Human-2.jpg',
-        title:'Detroit : become human',
-        description:'World of chaos',
+        imagePath: 'https://cdn.gamer-network.net/2017/packshots/64301/1497360389.jpg/EG11/resize/200x-1/format/jpg/days-gone-packshot-cover-boxart.jpg',
+        title:'Days Gone',
+        description:'Days gone  is an upcoming action-adventure game developed  by SIE based on zombie apocalypse ',
+        price:60
+    }),
+    
+    new Product({
+        imagePath: 'https://d1pqlgpcx1bu0k.cloudfront.net/static/img/GOW-OG-image.jpg',
+        title:'God Of War',
+        description:'God of War is a mythology-based action-adventure hack and slash video game franchise.',
         price:40
     }),
-    new Product({
-        imagePath: 'https://is2-ssl.mzstatic.com/image/thumb/Music62/v4/19/e8/f7/19e8f778-c4f4-987e-d257-be19722be9c6/cover.jpg/1200x630bb.jpg',
-        title:'Tomb Raider',
-        description:'Lara croft adventures',
-        price:35
-    }),
-    new Product({
-        imagePath: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Pop3.jpg/220px-Pop3.jpg',
-        title:'prince of persia',
-        description:'The two thrones',
-        price:10
-    }),
-    new Product({
-        imagePath: 'https://d12swbtw719y4s.cloudfront.net/images/3zZr998k/KU2dz42VriNWfT4QfOZ5/Naruto.jpeg?w=620',
-        title:'Naurto ultimate ninja strom 4',
-        description:'Naruto\'s saga',
-        price:25
-    })
 
+    new Product({
+        imagePath: 'https://i.pinimg.com/736x/07/98/29/079829b12d2c514eec9dc50a78b05d18--ps-cover-art.jpg',
+        title:'Grand Theft Auto V',
+        description:'Grand Theft Auto V is an action-adventure video game developed by Rockstar North and published by Rockstar Games',
+        price:55
+    })
 ];
 
 var done = 0;
